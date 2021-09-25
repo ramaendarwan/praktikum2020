@@ -1,0 +1,55 @@
+---
+title: "Latihan2_123190146"
+author: "Rama Endarwan"
+date: "9/26/2021"
+output: html_document
+---
+
+## Import Dataset
+
+```{R}
+library(dslabs)
+data(murders)
+```
+
+1. Pernyataan yang paling menggambarkan karakter tiap variabel pada data frame
+
+```{R}
+str(murders)
+```
+2. Nama kolom yang digunakan pada data frame
+
+```{R}
+names(murders)
+```
+
+3. Menyimpan singkatan negara pada objek "a" dan sebutkan jenis classnya
+
+```{R}
+a <- (murders$abb)
+class(a)
+```
+4. Menyimpan singkatan negara pada objek "b" dan sebutkan jenis classnya
+
+```{R}
+b <- murders[[2]]
+class(b)
+```
+
+5. Menggunakan fungsi level untuk melihat jumlah kategori yang dimiliki variabel
+
+```{R}
+levels(murders$region)
+```
+
+Menggunakan fungsi length untuk menentukan jumlah region yang dimiliki dataset
+   
+```{R}
+length(murders$region)
+```
+
+6. Menggunakan Fungsi tabel untuk menampilkan tabel baru yang berisi jumlah state    pada tiap region
+
+```{R}
+table(state.region)
+```
